@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Life Cycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    .cycle-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .cycle {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      position: relative;
+    }
+    .cycle-step {
+      position: absolute;
+      width: 120px;
+      text-align: center;
+      font-weight: 600;
+    }
+    /* Position steps around the circle */
+    .planning   { top: 30px;   left: 190px;  color: #21a7f3; }
+    .development{ top: 115px;  left: 360px;  color: #9368ef; }
+    .integration{ top: 270px;  left: 360px;  color: #37dedb; }
+    .testing    { top: 375px;  left: 190px;  color: #ff4a5b; }
+    .monitoring { top: 320px;  left: 30px;   color: #19c79f; }
+    .feedback   { top: 130px;  left: 30px;   color: #f89e4f; }
+
+    /* Center DevOps Life Cycle text */
+    .center-text {
+      position: absolute;
+      top: 210px;
+      left: 170px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: #222;
+    }
+    .label {
+      margin-top: 8px;
+      display: block;
+      font-size: 16px;
+      font-weight: normal;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="cycle-container">
+    <div class="cycle">
+      <div class="cycle-step planning">
+        <div>📋</div>
+        <span class="label">PLANNING</span>
+      </div>
+      <div class="cycle-step development">
+        <div>💻</div>
+        <span class="label">DEVELOPMENT</span>
+      </div>
+      <div class="cycle-step integration">
+        <div>⚙</div>
+        <span class="label">INTEGRATION</span>
+      </div>
+      <div class="cycle-step testing">
+        <div>🔍</div>
+        <span class="label">TESTING</span>
+      </div>
+      <div class="cycle-step monitoring">
+        <div>📈</div>
+        <span class="label">MONITORING</span>
+      </div>
+      <div class="cycle-step feedback">
+        <div>💬</div>
+        <span class="label">FEEDBACK</span>
+      </div>
+      <div class="center-text">
+        DevOps<br>Life Cycle
+      </div>
+    </div>
+  </div>
+</body>
+</html>
